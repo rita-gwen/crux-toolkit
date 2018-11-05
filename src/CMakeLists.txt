@@ -315,6 +315,9 @@ if (WIN32 AND NOT CYGWIN)
   if (INCLUDE_VENDOR_LIBRARIES)
     set (
       PWIZ_LIBRARIES
+      baf2sql_c.lib
+      libhdf5.lib
+      libhdf5pp.lib
       libpwiz_analysis_chromatogram_processing.lib
       libpwiz_analysis_common.lib
       libpwiz_analysis_demux.lib
@@ -344,8 +347,6 @@ if (WIN32 AND NOT CYGWIN)
       libpwiz_data_tradata_examples.lib
       libpwiz_data_tradata_version.lib
       libpwiz_data_vendor_readers.lib
-      libpwiz_reader_abi.lib
-      libpwiz_reader_abi_t2d.lib
       libpwiz_reader_agilent.lib
       libpwiz_reader_bruker.lib
       libpwiz_reader_shimadzu.lib
@@ -360,7 +361,6 @@ if (WIN32 AND NOT CYGWIN)
       libpwiz_utility_minimxml.lib
       libpwiz_utility_misc.lib
       libpwiz_utility_vendor_reader_test_harness.lib
-      libpwiz_vendor_api_abi.lib
       libpwiz_vendor_api_agilent.lib
       libpwiz_vendor_api_bruker.lib
       libpwiz_vendor_api_shimadzu.lib
@@ -369,8 +369,11 @@ if (WIN32 AND NOT CYGWIN)
       libpwiz_vendor_api_unifi.lib
       libpwiz_version.lib
       libSHA1
+      libsqlite3.lib
+      libsqlite3pp.lib
+      libsvm
       libzlib
-      MassLynxRaw
+      timsdata
     )
   else (INCLUDE_VENDOR_LIBRARIES)
     set (
