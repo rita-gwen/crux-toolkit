@@ -195,6 +195,7 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 endif (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 
 add_definitions(-DCRUX)
+add_definitions(-DBOOST_ALL_NO_LIB)
 
 add_library(
   crux-support

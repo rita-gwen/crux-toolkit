@@ -88,5 +88,5 @@ if (WIN32 AND NOT CYGWIN)
       RESULT_VARIABLE status
     )
   endif (${BUILD_TYPE} MATCHES "Debug")
-  check_status(status)
+#  check_status(status)
 endif (WIN32 AND NOT CYGWIN)
